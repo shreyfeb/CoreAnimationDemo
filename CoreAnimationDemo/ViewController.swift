@@ -19,9 +19,9 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        AnimateImageView.image = UIImage(named: "Img8")
+        AnimateImageView.image = UIImage(named: "Img29")
         AnimateImageView.contentMode = .scaleAspectFill
-//        AnimateView.backgroundColor = .cyan
+//        AnimateImageView.backgroundColor = .cyan
         view.addSubview(AnimateImageView)
         
         
