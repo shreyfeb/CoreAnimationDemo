@@ -67,7 +67,7 @@ class ViewController: UIViewController {
         
         let animation = CABasicAnimation()
         animation.keyPath = "position.x"
-//        animation.keyPath =  "transform.scale"
+        animation.keyPath =  "transform.scale"
         animation.fromValue = view.bounds.midX * 2
         animation.toValue = view.bounds.midX
         animation.duration = 1
