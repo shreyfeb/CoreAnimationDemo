@@ -12,7 +12,7 @@ class ViewController: UIViewController {
 //    let AnimateView = UIImageView(frame: CGRect(x: 20, y: 140, width: 140, height: 100))
     let AnimateImageView = UIImageView()
     let customWidth:CGFloat = 140
-    let customHeight:CGFloat = 100
+    let customHeight:CGFloat = 110
     
     let animateTextView = UITextView()
     
@@ -67,7 +67,7 @@ class ViewController: UIViewController {
         
         let animation = CABasicAnimation()
         animation.keyPath = "position.x"
-        animation.keyPath =  "transform.scale"
+//        animation.keyPath =  "transform.scale"
         animation.fromValue = view.bounds.midX * 2
         animation.toValue = view.bounds.midX
         animation.duration = 1
