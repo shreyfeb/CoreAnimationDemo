@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     let customHeight:CGFloat = 110
     
     let animateTextView = UITextView()
+    let customButton = UIButton()
     
     
     override func viewDidLoad() {
@@ -30,6 +31,13 @@ class ViewController: UIViewController {
         animateTextView.textColor = .white
         animateTextView.backgroundColor = .clear
         view.addSubview(animateTextView)
+        
+        customButton.setTitle("Tap Me!", for: .normal)
+        customButton.setTitleColor(.darkGray, for: .selected)
+        customButton.backgroundColor = .black
+//        customButton.addTarget(self, action: "Tapped", for: .touchUpInside)
+
+        view.addSubview(customButton)
     }
     override func viewDidAppear(_ animated: Bool) {
         AnimateImageView.frame = CGRect(x: CGFloat(Int(view.bounds.midX - customWidth/2)),
@@ -41,9 +49,16 @@ class ViewController: UIViewController {
                                        y: CGFloat(Int(view.bounds.midY - customHeight/2 - 150)),
                                        width: customWidth,
                                        height: customHeight)
+        
+        customButton.frame = CGRect(x: CGFloat(Int(view.bounds.midX - customWidth/2 - 150)),
+                                    y: CGFloat(Int(view.bounds.midY - customHeight/2 )),
+                                    width: customWidth,
+                                    height: customHeight)
+        
         animationCustom()
         animationOfText()
     }
+    
 
     func animationCustom(){
         let animation = CABasicAnimation()
@@ -69,7 +84,7 @@ class ViewController: UIViewController {
         animation.keyPath = "position.x"
 //        animation.keyPath =  "transform.scale"
         animation.fromValue = view.bounds.midX * 2
-        animation.toValue = view.bounds.midX
+        animation.toValue = view.bounds.midX + 10
         animation.duration = 1
 
     
