@@ -35,7 +35,7 @@ class ViewController: UIViewController {
         customButton.setTitle("Tap Me!", for: .normal)
         customButton.setTitleColor(.darkGray, for: .selected)
         customButton.backgroundColor = .black
-//        customButton.addTarget(self, action: "Tapped", for: .touchUpInside)
+        customButton.addTarget(self, action: "Tapped", for: .touchUpInside)
 
         view.addSubview(customButton)
     }
