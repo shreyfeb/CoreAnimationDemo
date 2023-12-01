@@ -92,7 +92,11 @@ class ViewController: UIViewController {
 //        animateTextView.layer.position = CGPoint(x: 300, y: 100 + 100/2) // update to final position
         AnimateImageView.layer.transform = CATransform3DMakeScale(2, 2, 1)
     }
-    
+    func animateScreen(){
+        let animation = CABasicAnimation()
+        animation.keyPath =  "transform.scale"
+
+    }
 
 
 }
