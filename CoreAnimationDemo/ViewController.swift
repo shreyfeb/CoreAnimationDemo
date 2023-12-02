@@ -95,6 +95,9 @@ class ViewController: UIViewController {
     func animateScreen(){
         let animation = CABasicAnimation()
         animation.keyPath =  "transform.scale"
+        animation.fromValue = view.bounds.midX * 2
+        animation.toValue = view.bounds.midX + 30
+
 
     }
 
