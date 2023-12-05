@@ -97,7 +97,7 @@ class ViewController: UIViewController {
         animation.keyPath =  "transform.scale"
         animation.fromValue = view.bounds.midX * 2
         animation.toValue = view.bounds.midX + 30
-        animation.duration = 1
+  
 
 
 
