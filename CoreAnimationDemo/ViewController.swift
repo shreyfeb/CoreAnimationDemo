@@ -81,8 +81,8 @@ class ViewController: UIViewController {
     func animationOfText(){
         
         let animation = CABasicAnimation()
-        animation.keyPath = "position.x"
-//        animation.keyPath =  "transform.scale"
+//        animation.keyPath = "position.x"
+        animation.keyPath =  "transform.scale"
         animation.fromValue = view.bounds.midX * 2
         animation.toValue = view.bounds.midX + 10
         animation.duration = 1
